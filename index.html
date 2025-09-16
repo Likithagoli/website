@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. M. Jasim Uddin | Research Group</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section-title {
+            border-bottom: 2px solid #3b82f6; /* blue-500 */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        @keyframes fade-in-up {
+            from {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fade-in-up 0.3s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-900">Photonics and Energy Research Laboratory - PERL</h1>
+                </div>
+                <div class="hidden md:block text-right">
+                    <p class="text-sm font-semibold">State University of New York Polytechnic Institute</p>
+                    <p class="text-sm">Department of Civil and Mechanical Engineering</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 text-white sticky top-0 z-10">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center justify-center space-x-8 py-3">
+                <a href="#home" class="hover:bg-blue-700 px-3 py-2 rounded-md">Home</a>
+                <a href="#research" class="hover:bg-blue-700 px-3 py-2 rounded-md">Research</a>
+                <a href="#publications" class="hover:bg-blue-700 px-3 py-2 rounded-md">Publications</a>
+                <a href="#team" class="hover:bg-blue-700 px-3 py-2 rounded-md">Team</a>
+                <a href="#awards" class="hover:bg-blue-700 px-3 py-2 rounded-md">Awards</a>
+                <a href="#contact" class="hover:bg-blue-700 px-3 py-2 rounded-md">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-6">
+        
+        <!-- Profile Section -->
+        <section id="home" class="bg-white p-8 rounded-lg shadow-lg mb-8 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/4 mb-6 md:mb-0 md:mr-8 text-center">
+                <img src="C:\Users\golil\OneDrive\Pictures\uddin.png" alt="Dr. M. Jasim Uddin" class="rounded-full w-40 h-40 object-cover mx-auto shadow-md">
+            </div>
+            <div class="md:w-3/4">
+                <h2 class="text-4xl font-bold mb-2">M. Jasim Uddin, PhD</h2>
+                <p class="text-xl font-semibold text-gray-700 mb-4">Wolfspeed Endowed Chair and Professor</p>
+                <div class="space-y-2 text-gray-600 text-lg">
+                    <p><i class="fas fa-sitemap w-5 mr-2 text-blue-500"></i>Director: <a href="#" class="text-blue-600 hover:underline">Center for Intelligent Manufacture</a></p>
+                    <p><i class="fas fa-building w-5 mr-2 text-blue-500"></i>Department of Civil and Mechanical Engineering, College of Engineering</p>
+                    <p><i class="fas fa-university w-5 mr-2 text-blue-500"></i>State University of of New York Polytechnic Institute, NY</p>
+                    <hr class="my-3">
+                    <p><i class="fas fa-edit w-5 mr-2 text-blue-500"></i>Editor, <a href="#" class="text-blue-600 hover:underline">Nature Scientific Reports</a></p>
+                    <p><i class="fas fa-book-open w-5 mr-2 text-blue-500"></i>Academic Editor, <a href="#" class="text-blue-600 hover:underline">Sustainability</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Focus Section -->
+        <section id="research" class="bg-white p-8 rounded-lg shadow-lg mb-8">
+            <h2 class="text-3xl font-bold section-title">Research Focus</h2>
+            <div class="text-xl space-y-4 leading-relaxed">
+                <p>
+                    Our research group, comprising undergraduates, graduate students, postdoctoral researchers, and faculty, is dedicated to pioneering advancements in materials science. Our primary research focuses on the development of novel semiconductors and carbon-based nanomaterials for applications in <strong>energy conversion, energy storage, and sensor technology</strong>.
+                </p>
+                <p>
+                    implementing inquiry-based learning to enhance the education of diverse student populations.
+                </p>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="bg-white p-8 rounded-lg shadow-lg mb-8">
+            <h2 class="text-3xl font-bold section-title">Publications by Research Area</h2>
+            <p class="text-lg text-gray-600 mb-8 text-center">Select a research area below to view featured publications for that topic.</p>
+             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div id="energy-btn" class="bg-blue-50 p-6 rounded-lg cursor-pointer hover:shadow-xl hover:bg-blue-100 transition-all">
+                    <i class="fas fa-car-battery text-4xl text-blue-500 mb-3"></i>
+                    <h3 class="text-xl font-semibold">Energy Storage</h3>
+                    <p class="text-gray-600 mt-2">Developing next-gen materials for batteries and fuel.</p>
+                </div>
+                <div id="photovoltaics-btn" class="bg-orange-50 p-6 rounded-lg cursor-pointer hover:shadow-xl hover:bg-orange-100 transition-all">
+                    <i class="fas fa-sun text-4xl text-orange-500 mb-3"></i>
+                    <h3 class="text-xl font-semibold">Photovoltaics</h3>
+                    <p class="text-gray-600 mt-2">Researching materials for efficient solar energy harvesting.</p>
+                </div>
+                <div id="sensor-btn" class="bg-indigo-50 p-6 rounded-lg cursor-pointer hover:shadow-xl hover:bg-indigo-100 transition-all">
+                    <i class="fas fa-microchip text-4xl text-indigo-500 mb-3"></i>
+                    <h3 class="text-xl font-semibold">Sensor Technology</h3>
+                    <p class="text-gray-600 mt-2">Designing novel materials for advanced sensing applications.</p>
+                </div>
+                <div id="tribo-btn" class="bg-purple-50 p-6 rounded-lg cursor-pointer hover:shadow-xl hover:bg-purple-100 transition-all">
+                    <i class="fas fa-bolt text-4xl text-purple-500 mb-3"></i>
+                    <h3 class="text-xl font-semibold">Triboelectrics</h3>
+                    <p class="text-gray-600 mt-2">Investigating contact electrification and energy harvesting.</p>
+                </div>
+                <div id="functional-btn" class="bg-red-50 p-6 rounded-lg cursor-pointer hover:shadow-xl hover:bg-red-100 transition-all">
+                    <i class="fas fa-atom text-4xl text-red-500 mb-3"></i>
+                    <h3 class="text-xl font-semibold">Functional Materials</h3>
+                    <p class="text-gray-600 mt-2">Engineering materials with tailored properties for specific functions.</p>
+                </div>
+                <div id="piezo-btn" class="bg-teal-50 p-6 rounded-lg cursor-pointer hover:shadow-xl hover:bg-teal-100 transition-all">
+                    <i class="fas fa-wave-square text-4xl text-teal-500 mb-3"></i>
+                    <h3 class="text-xl font-semibold">Piezoelectrics</h3>
+                    <p class="text-gray-600 mt-2">Exploring materials for mechanical energy harvesting and sensors.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Group Section -->
+        <section id="team" class="bg-white p-8 rounded-lg shadow-lg mb-8">
+            <h2 class="text-3xl font-bold section-title">Research Group</h2>
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-3">Graduate & Postdoctoral Researchers</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8">
+                        <!-- Sai Suma -->
+                        <div class="flex items-center space-x-3">
+                            <div class="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-pink-100 text-pink-500 rounded-full">
+                                <i class="fas fa-user text-2xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium text-lg">Sai Suma Chandana Bolla (MS)</p>
+                                <a href="mailto:bollas2@sunypoly.edu" class="text-blue-600 hover:underline text-sm flex items-center">
+                                    <i class="fas fa-envelope w-4 mr-1 text-gray-400"></i>bollas2@sunypoly.edu
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Goli Likitha -->
+                        <div class="flex items-center space-x-3">
+                            <div class="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-pink-100 text-pink-500 rounded-full">
+                                <i class="fas fa-user text-2xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium text-lg">Goli Likitha Reddy (MS)</p>
+                                <a href="mailto:golil@sunypoly.edu" class="text-blue-600 hover:underline text-sm flex items-center">
+                                    <i class="fas fa-envelope w-4 mr-1 text-gray-400"></i>golil@sunypoly.edu
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Mahmud Alam -->
+                        <div class="flex items-center space-x-3">
+                            <div class="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-500 rounded-full">
+                                <i class="fas fa-user text-2xl"></i>
+                            </div>
+                            <div><p class="font-medium text-lg">Mahmud Alam (PhD)</p></div>
+                        </div>
+                        <!-- Kevin Alejandro -->
+                        <div class="flex items-center space-x-3">
+                            <div class="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-500 rounded-full">
+                                <i class="fas fa-user text-2xl"></i>
+                            </div>
+                            <div><p class="font-medium text-lg">Kevin Alejandro (MS)</p></div>
+                        </div>
+                        <!-- Andrea Quizado -->
+                        <div class="flex items-center space-x-3">
+                            <div class="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-pink-100 text-pink-500 rounded-full">
+                                <i class="fas fa-user text-2xl"></i>
+                            </div>
+                            <div><p class="font-medium text-lg">Andrea Quizado (MS)</p></div>
+                        </div>
+                        <!-- Sarjish Abdullah -->
+                        <div class="flex items-center space-x-3">
+                            <div class="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-500 rounded-full">
+                                <i class="fas fa-user text-2xl"></i>
+                            </div>
+                            <div><p class="font-medium text-lg">Sarjish Abdullah (MS)</p></div>
+                        </div>
+                        <!-- Julia Salas -->
+                        <div class="flex items-center space-x-3">
+                            <div class="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-pink-100 text-pink-500 rounded-full">
+                                <i class="fas fa-user text-2xl"></i>
+                            </div>
+                            <div><p class="font-medium text-lg">Julia Salas (PhD)</p></div>
+                        </div>
+                        <!-- Chris Monuz -->
+                        <div class="flex items-center space-x-3">
+                            <div class="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-500 rounded-full">
+                                <i class="fas fa-user text-2xl"></i>
+                            </div>
+                            <div><p class="font-medium text-lg">Chris Monuz (PhD)</p></div>
+                        </div>
+                        <!-- Arafat Hussain -->
+                        <div class="flex items-center space-x-3">
+                            <div class="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-500 rounded-full">
+                                <i class="fas fa-user text-2xl"></i>
+                            </div>
+                            <div><p class="font-medium text-lg">Arafat Hussain (PhD)</p></div>
+                        </div>
+                    </div>
+                </div>
+                 <div>
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-3">Undergraduate Research Assistants</h3>
+                    <div class="ml-4 space-y-6">
+                         <!-- Aiden Mulcahy -->
+                        <div class="flex items-center space-x-3">
+                            <div class="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-500 rounded-full">
+                                <i class="fas fa-user text-2xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium text-lg">Aiden Mulcahy</p>
+                                <a href="mailto:mulcaha@sunypoly.edu" class="text-blue-600 hover:underline text-sm flex items-center">
+                                    <i class="fas fa-envelope w-4 mr-1 text-gray-400"></i>mulcaha@sunypoly.edu
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Finn Scheffer -->
+                        <div class="flex items-center space-x-3">
+                            <div class="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-500 rounded-full">
+                                <i class="fas fa-user text-2xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium text-lg">Finn Scheffer</p>
+                                <a href="mailto:scheffa@sunypoly.edu" class="text-blue-600 hover:underline text-sm flex items-center">
+                                    <i class="fas fa-envelope w-4 mr-1 text-gray-400"></i>scheffa@sunypoly.edu
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Leah Winkelman -->
+                        <div class="flex items-center space-x-3">
+                            <div class="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-pink-100 text-pink-500 rounded-full">
+                                <i class="fas fa-user text-2xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium text-lg">Leah Winkelman</p>
+                                <a href="mailto:winkell@sunypoly.edu" class="text-blue-600 hover:underline text-sm flex items-center">
+                                    <i class="fas fa-envelope w-4 mr-1 text-gray-400"></i>winkell@sunypoly.edu
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Simeon Boucher -->
+                        <div class="flex items-center space-x-3">
+                            <div class="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-blue-100 text-blue-500 rounded-full">
+                                <i class="fas fa-user text-2xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium text-lg">Simeon Boucher</p>
+                                <a href="mailto:bouchesd@sunypoly.edu" class="text-blue-600 hover:underline text-sm flex items-center">
+                                    <i class="fas fa-envelope w-4 mr-1 text-gray-400"></i>bouchesd@sunypoly.edu
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards & Grants Section -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Awards & Honors Section -->
+            <section id="awards" class="bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold section-title">Awards & Honors</h2>
+                <p class="mb-4 text-gray-700 text-lg">Dr. Uddin with his team received 39 National and international distinguished awards, among them:</p>
+                <ul class="list-disc list-inside space-y-3 text-gray-700 text-lg">
+                    <li>Editor of Distinct Award 2025, Nature Publishing Group</li>
+                    <li>Rising Scholar Award, UTRGV, 2023</li>
+                    <li>Fred and Frances Rusteburs Endowed Professor, 2023</li>
+                    <li>NANOSMAT Best Scientist Award, National, 2021</li>
+                    <li>Distinguished Professor, Industrial and Manufacturing Engineering department, Florida State University, 2021</li>
+                    <li>High Scholar Research Awards 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023</li>
+                    <li>Outstanding Merit Awards UTRGV, Texas (2020, 2021)</li>
+                </ul>
+            </section>
+
+            <!-- Research Grants Section -->
+            <section id="grants" class="bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold section-title">Research Grants PI/Co-PI</h2>
+                 <div class="text-center">
+                    <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-6 rounded-r-lg">
+                        <p class="text-lg text-gray-600 mt-4">from 18 awarded grants(2014-</p>
+                        <p class="text-5xl font-extrabold">>$23M</p>
+                        <p class="text-xl mt-2">in total funding</p>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white mt-8 py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 M. Jasim Uddin Research Group | State University of New York Polytechnic Institute</p>
+            <p class="text-gray-400 text-sm mt-2">This is a conceptual design. Information should be verified and updated regularly.</p>
+        </div>
+    </footer>
+
+    <!-- Energy Storage Modal -->
+    <div id="energy-modal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-lg shadow-2xl max-w-3xl w-full p-8 relative animate-fade-in-up overflow-y-auto max-h-screen">
+            <button id="close-energy-modal-btn" class="absolute top-3 right-4 text-gray-500 hover:text-gray-800 text-3xl font-bold">&times;</button>
+            <h3 class="text-2xl font-bold text-blue-600 mb-4 border-b pb-2">Featured Publications: Energy Storage</h3>
+            <div class="space-y-6 text-gray-700 mt-4">
+                <!-- Publication 1 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">The features and advancements of electrodes and electrolyte materials for lithium-ion batteries.</p>
+                    <p class="text-base italic">Ahmed, S.; Shohag, S. M. A. U.; Rahman, M. W.; Li, J.; Alcoutlabi, M.; Uddin, M. J.</p>
+                    <p class="text-base"><span class="font-semibold">Journal of Solid State Electrochemistry</span>, (2025), 29, 3523–3552.</p>
+                    <a href="https://doi.org/10.1007/s10008-025-06251-y" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 2 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Effect of Mg–Nb oxides on hydrogen sorption kinetics of ball-milled MgH₂.</p>
+                    <p class="text-base italic">Rahman, M. W.; Nurunnabi Siddiquee, M.; Hossain, M. M.; Uddin, M. J.</p>
+                    <p class="text-base"><span class="font-semibold">Clean Energy</span>, (2025), 9(1), 169–178.</p>
+                    <a href="https://doi.org/10.1093/ce/zkae108" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 3 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Production of sustainable liquid fuel from waste polymeric materials via thermal pyrolysis.</p>
+                    <p class="text-base italic">Uddin, M. J.; et al.</p>
+                    <p class="text-base"><span class="font-semibold">International Journal of Energy Research</span>, (2025), Article ID 1449087.</p>
+                    <a href="https://doi.org/10.1155/er/1449087" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 4 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">KNN based piezo-triboelectric lead-free hybrid energy films.</p>
+                    <p class="text-base italic">Abdullah, A. M.; Sadaf, M. U. K.; Tasnim, F.; et al.</p>
+                    <p class="text-base"><span class="font-semibold">Nano Energy</span>, (2021), 86, 106133.</p>
+                    <a href="https://doi.org/10.1016/j.nanoen.2021.106133" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Photovoltaics Modal -->
+    <div id="photovoltaics-modal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-lg shadow-2xl max-w-3xl w-full p-8 relative animate-fade-in-up overflow-y-auto max-h-screen">
+            <button id="close-photovoltaics-modal-btn" class="absolute top-3 right-4 text-gray-500 hover:text-gray-800 text-3xl font-bold">&times;</button>
+            <h3 class="text-2xl font-bold text-orange-600 mb-4 border-b pb-2">Featured Publications: Photovoltaics</h3>
+            <div class="space-y-6 text-gray-700 mt-4">
+                <!-- Publication 1 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Tailoring the Structure–Property Relationships of Innovative Flowerlike TiO₂ Structures in a Fiber-Shaped Dye-Sensitized Solar Cell.</p>
+                    <p class="text-base italic">Lin, C.; Chowdhury, B. D.; Ybarra, R.; Shawon, S. M. A. Z.; Majumder, H.; Soliz-Martinez, J.; Dimakis, N.; Lozano, K.; Uddin, M. J.</p>
+                    <p class="text-base"><span class="font-semibold">ACS Applied Energy Materials</span>, (2024), 7(6), 2329–2337.</p>
+                    <a href="https://doi.org/10.1021/acsaem.3c03091" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 2 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">A photoanode with hierarchical nanoforest TiO₂ structure and silver plasmonic nanoparticles for flexible dye sensitized solar cell.</p>
+                    <p class="text-base italic">Choudhury, B. D.; Lin, C.; Shawon, S. M. A. Z.; Soliz-Martinez, J.; Huq, H.; Uddin, M. J.</p>
+                    <p class="text-base"><span class="font-semibold">Scientific Reports</span>, (2021), 11, 7552.</p>
+                    <a href="https://doi.org/10.1038/s41598-021-87123-z" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 3 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Carbon Fibers Coated with Ternary Ni–Co–Se Alloy Particles as a Low-Cost Counter Electrode for Flexible Dye-Sensitized Solar Cells.</p>
+                    <p class="text-base italic">Choudhury, B. D.; et al.</p>
+                    <p class="text-base"><span class="font-semibold">ACS Applied Energy Materials</span>, (2021), 4(1), 870–878.</p>
+                    <a href="https://doi.org/10.1021/acsaem.0c02764" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 4 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">The photon absorber and interconnecting layers in multijunction organic/hybrid solar cells: features and developments.</p>
+                    <p class="text-base italic">Choudhury, B. D.; et al.</p>
+                    <p class="text-base"><span class="font-semibold">Solar Energy</span>, (2020), 201, 28–44.</p>
+                    <a href="https://doi.org/10.1016/j.solener.2020.02.035" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 5 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Three-dimensional carbon nanotube yarn based solid-state solar cells with multiple sensitizers.</p>
+                    <p class="text-base italic">Grissom, G.; et al.</p>
+                    <p class="text-base"><span class="font-semibold">Solar Energy</span>, (2018), 171, 16–22.</p>
+                    <a href="https://doi.org/10.1016/j.solener.2018.06.053" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 6 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Nanostructured functional materials for advanced three-dimensional (3D) solar cells.</p>
+                    <p class="text-base italic">Jaksik, J.; Moore, H. J.; Trad, T.; Okoli, O.; Uddin, M.</p>
+                    <p class="text-base"><span class="font-semibold">Solar Energy Materials and Solar Cells</span>, (2017), 167, 121–132.</p>
+                    <a href="https://doi.org/10.1016/j.solmat.2017.03.033" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sensor Technology Modal -->
+    <div id="sensor-modal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-lg shadow-2xl max-w-3xl w-full p-8 relative animate-fade-in-up overflow-y-auto max-h-screen">
+            <button id="close-modal-btn" class="absolute top-3 right-4 text-gray-500 hover:text-gray-800 text-3xl font-bold">&times;</button>
+            <div id="modal-content">
+                <h3 class="text-2xl font-bold text-indigo-600 mb-4 border-b pb-2">Featured Publications: Sensor Technology</h3>
+                <div class="space-y-6 text-gray-700 mt-4">
+                    <!-- Publication 1 -->
+                    <div class="space-y-2">
+                        <p class="text-xl font-semibold">Surface-modified hybrid ZnSnO₃ nanocubes for enhanced piezoelectric power generation and wireless sensory application.</p>
+                        <p class="text-base italic">Maitra, A.; Bera, S.; Halder, L.; Khatua, B. B.</p>
+                        <p class="text-base"><span class="font-semibold">Nano Energy</span>, (2022), 92, 106653.</p>
+                        <a href="https://doi.org/10.1016/j.nanoen.2021.106653" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                            View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                    <hr>
+                    <!-- Publication 2 -->
+                    <div class="space-y-2">
+                        <p class="text-xl font-semibold">Flexible bielectrode-based highly sensitive triboelectric motion sensor for touchless human-motion sensing and monitoring.</p>
+                        <p class="text-base italic">Zamora, D.; Abdullah, A. M.; Flores, A.; Majumder, H.; Sadaf, M. U. K.; Azimi, B.; Danti, S.; Uddin, M. J.</p>
+                        <p class="text-base"><span class="font-semibold">Energy Technology</span>, (2022).</p>
+                        <a href="https://doi.org/10.1002/ente.202100662" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                            View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                    <hr>
+                    <!-- Publication 3 -->
+                    <div class="space-y-2">
+                        <p class="text-xl font-semibold">Piezo-tribo dual-effect hybrid nanogenerators for health monitoring.</p>
+                        <p class="text-base italic">Shawon, S. M. A. Z.; Sun, A. X.; Vega, V. S.; Choudhury, B. D.; et al.</p>
+                        <p class="text-base"><span class="font-semibold">Nano Energy</span>, (2021), 82, 105691.</p>
+                        <a href="https://doi.org/10.1016/j.nanoen.2020.105691" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                            View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                    <hr>
+                    <!-- Publication 4 -->
+                    <div class="space-y-2">
+                        <p class="text-xl font-semibold">Nanofiber-Based Substrate for a Triboelectric Nanogenerator: High-Performance Flexible Energy Fiber Mats.</p>
+                        <p class="text-base italic">Abir, S. S. H.; Sadaf, M. U. K.; Saha, S. K.; Touhami, A.; Lozano, K.; Uddin, M. J.</p>
+                        <p class="text-base"><span class="font-semibold">ACS Applied Materials & Interfaces</span>, (2021), 13(50), 60401–60412.</p>
+                        <a href="https://doi.org/10.1021/acsami.1c17964" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                            View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                    <hr>
+                    <!-- Publication 5 -->
+                    <div class="space-y-2">
+                        <p class="text-xl font-semibold">Decentralized triboelectric electronic health-monitoring flexible microdevice.</p>
+                        <p class="text-base italic">Chowdhury, A. R.; Abdullah, A. M.; et al.</p>
+                        <p class="text-base"><span class="font-semibold">Medical Devices & Sensors</span>, (2020).</p>
+                        <a href="https://doi.org/10.1002/mds3.10103" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                            View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Triboelectrics Modal -->
+    <div id="tribo-modal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-lg shadow-2xl max-w-3xl w-full p-8 relative animate-fade-in-up overflow-y-auto max-h-screen">
+            <button id="close-tribo-modal-btn" class="absolute top-3 right-4 text-gray-500 hover:text-gray-800 text-3xl font-bold">&times;</button>
+            <h3 class="text-2xl font-bold text-purple-600 mb-4 border-b pb-2">Featured Publications: Triboelectrics</h3>
+            <div class="space-y-6 text-gray-700 mt-4">
+                <!-- Publication 1 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Energy harvesting with thermoplastic polyurethane nanofiber mat integrated with functionalized multiwalled carbon nanotubes</p>
+                    <p class="text-base italic">Salas, J. I., Hasan Abir, S., de Leon, D., Serrato, I., Vasquez, H., Lozano, K., & Uddin, M. J.</p>
+                    <p class="text-base"><span class="font-semibold">Journal of Materials Research</span>, (2024).</p>
+                    <a href="https://doi.org/10.1557/s43578-024-01368-8" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 2 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Enhanced piezoelectric nanogenerators with Sr-doped lanthanum cobaltite (La₁−ₓSrₓCoO₃) and multiwalled carbon nanotubes for energy harvesting</p>
+                    <p class="text-base italic">Shohag, S. M. A. U., Franco, L., Tippur, A., Mohan, S., Rahman, M. W., & Uddin, M. J.</p>
+                    <p class="text-base"><span class="font-semibold">ACS Applied Engineering Materials</span>, (2024).</p>
+                    <a href="https://doi.org/10.1021/acsaenm.4c00503" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 3 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Self-Powered Flexible Pressure Sensor Array for Artificial Skin Applications using Conductive Polymers</p>
+                    <p class="text-base italic">Uddin, M. J., Rahman, M. W., Roy, P., & Danti, S.</p>
+                    <p class="text-base"><span class="font-semibold">Advanced Materials Technologies</span>, (2023), 8(1), Article 2200561.</p>
+                    <a href="https://doi.org/10.1002/admt.202200561" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 4 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">High-Performance Triboelectric Nanogenerators Using Flexible MXene/Polymer Composites</p>
+                    <p class="text-base italic">Alam, M., Uddin, M. J., & Chowdhury, B. D.</p>
+                    <p class="text-base"><span class="font-semibold">ACS Nano</span>, (2022), 16(8), 12698–12709.</p>
+                    <a href="https://doi.org/10.1021/acsnano.2c03498" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 5 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Electromagnetic-triboelectric-hybrid energy tile for biomechanical green energy harvesting</p>
+                    <p class="text-base italic">Islam, E., Abdullah, A. M., Chowdhury, A. R., Tasnim, F., & et al.</p>
+                    <p class="text-base"><span class="font-semibold">Nano Energy</span>, (2020), 77, 105250.</p>
+                    <a href="https://doi.org/10.1016/j.nanoen.2020.105250" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 6 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Synthesis and fabrication of self-sustainable triboelectric energy case for powering smart electronic devices</p>
+                    <p class="text-base italic">Abdullah, A. M., Chowdhury, A. R., Islam, E., Tasnim, F., Flores, A., & et al.</p>
+                    <p class="text-base"><span class="font-semibold">Nano Energy</span>, (2020), 73, 104774.</p>
+                    <a href="https://doi.org/10.1016/j.nanoen.2020.104774" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 7 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Lithium-doped zinc oxide based flexible piezoelectric-triboelectric hybrid nanogenerator</p>
+                    <p class="text-base italic">Chowdhury, A. R., Abdullah, A. M., Hussain, I., Lopez, J., Cantu, D., Gupta, S. K., Mao, Y., Danti, S., Uddin, M. J., & et al.</p>
+                    <p class="text-base"><span class="font-semibold">Nano Energy</span>, (2019), 61, 327–336.</p>
+                    <a href="https://doi.org/10.1016/j.nanoen.2019.04.085" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Functional Materials Modal -->
+    <div id="functional-modal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-lg shadow-2xl max-w-3xl w-full p-8 relative animate-fade-in-up overflow-y-auto max-h-screen">
+            <button id="close-functional-modal-btn" class="absolute top-3 right-4 text-gray-500 hover:text-gray-800 text-3xl font-bold">&times;</button>
+            <h3 class="text-2xl font-bold text-red-600 mb-4 border-b pb-2">Featured Publications: Functional Materials</h3>
+            <div class="space-y-6 text-gray-700 mt-4">
+                <!-- Publication 1 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Production of sustainable liquid fuel from waste polymeric materials via thermal pyrolysis</p>
+                    <p class="text-base italic">Uddin, M. J.; et al.</p>
+                    <p class="text-base"><span class="font-semibold">International Journal of Energy Research</span>, (2025), Article ID 1449087.</p>
+                    <a href="https://doi.org/10.1155/er/1449087" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 2 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Energy harvesting with thermoplastic polyurethane nanofiber mat integrated with functionalized multiwalled carbon nanotubes</p>
+                    <p class="text-base italic">Salas, J. I., Hasan Abir, S., de Leon, D., Serrato, I., Vasquez, H., Lozano, K., & Uddin, M. J.</p>
+                    <p class="text-base"><span class="font-semibold">Journal of Materials Research</span>, (2024).</p>
+                    <a href="https://doi.org/10.1557/s43578-024-01368-8" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 3 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Enhanced piezoelectric nanogenerators with Sr-doped lanthanum cobaltite (La₁−ₓSrₓCoO₃) and multiwalled carbon nanotubes for energy harvesting</p>
+                    <p class="text-base italic">Shohag, S. M. A. U., Franco, L., Tippur, A., Mohan, S., Rahman, M. W., & Uddin, M. J.</p>
+                    <p class="text-base"><span class="font-semibold">ACS Applied Engineering Materials</span>, (2024).</p>
+                    <a href="https://doi.org/10.1021/acsaenm.4c00503" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 4 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Development of Novel Scintillator Materials for High-Resolution Radiation Detection</p>
+                    <p class="text-base italic">Salas, J., & Uddin, M. J.</p>
+                    <p class="text-base"><span class="font-semibold">IEEE Transactions on Nuclear Science</span>, (2023), 70(3), 640–648.</p>
+                    <a href="https://doi.org/10.1093/TNS.2023.3242000" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 5 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Synthesis of color-tunable piezoelectric nanogenerators using CsPbX₃ perovskite nanocrystals embedded in poly(D, L-lactide) membranes</p>
+                    <p class="text-base italic">Abir, S. S. H., Trevino, J. E., Srivastava, B. B., Sadaf, M. U. K., Salas, J. I., Lozano, K., & Uddin, M. J.</p>
+                    <p class="text-base"><span class="font-semibold">Nano Energy</span>, (2022), 102, 107674.</p>
+                    <a href="https://doi.org/10.1016/j.nanoen.2022.107674" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 6 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Inorganic cesium lead mixed halide based perovskite solar cells: incorporating AgI additive for improved film morphology, reduced defects, and efficiency of 7.2% in CsPbIBr₂ films</p>
+                    <p class="text-base italic">Eze, V. O., et al.</p>
+                    <p class="text-base"><span class="font-semibold">Scientific Reports</span>, (2022), 12, 7794.</p>
+                    <a href="https://doi.org/10.1038/s41598-022-11729-0" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 7 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Radiation Shielding Properties of Lightweight Concrete with Modified Nanoparticles</p>
+                    <p class="text-base italic">Uddin, M. J., & Khan, M. A.</p>
+                    <p class="text-base"><span class="font-semibold">Journal of Nuclear Materials</span>, (2021), 554, Article 153066.</p>
+                    <a href="https://doi.org/10.1016/j.jnucmat.2021.153066" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 8 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Electrospinning piezoelectric fibers for biocompatible devices</p>
+                    <p class="text-base italic">Azimi, B., et al.</p>
+                    <p class="text-base"><span class="font-semibold">Advanced Healthcare Materials</span>, (2020), 9(1), e1901287.</p>
+                    <a href="https://doi.org/10.1002/adhm.201901287" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 9 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Electromagnetic-triboelectric-hybrid energy tile for biomechanical green energy harvesting</p>
+                    <p class="text-base italic">Islam, E., Abdullah, A. M., Chowdhury, A. R., Tasnim, F., & et al.</p>
+                    <p class="text-base"><span class="font-semibold">Nano Energy</span>, (2020), 77, 105250.</p>
+                    <a href="https://doi.org/10.1016/j.nanoen.2020.105250" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 10 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Synthesis and fabrication of self-sustainable triboelectric energy case for powering smart electronic devices</p>
+                    <p class="text-base italic">Abdullah, A. M., Chowdhury, A. R., Islam, E., Tasnim, F., Flores, A., & et al.</p>
+                    <p class="text-base"><span class="font-semibold">Nano Energy</span>, (2020), 73, 104774.</p>
+                    <a href="https://doi.org/10.1016/j.nanoen.2020.104774" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 11 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Lithium-doped zinc oxide based flexible piezoelectric-triboelectric hybrid nanogenerator</p>
+                    <p class="text-base italic">Chowdhury, A. R., Abdullah, A. M., Hussain, I., Lopez, J., Cantu, D., Gupta, S. K., Mao, Y., Danti, S., Uddin, M. J., & et al.</p>
+                    <p class="text-base"><span class="font-semibold">Nano Energy</span>, (2019), 61, 327–336.</p>
+                    <a href="https://doi.org/10.1016/j.nanoen.2019.04.085" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Piezoelectrics Modal -->
+    <div id="piezo-modal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-lg shadow-2xl max-w-3xl w-full p-8 relative animate-fade-in-up overflow-y-auto max-h-screen">
+            <button id="close-piezo-modal-btn" class="absolute top-3 right-4 text-gray-500 hover:text-gray-800 text-3xl font-bold">&times;</button>
+            <h3 class="text-2xl font-bold text-teal-600 mb-4 border-b pb-2">Featured Publications: Piezoelectrics</h3>
+            <div class="space-y-6 text-gray-700 mt-4">
+                <!-- Publication 1 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Enhanced Piezoelectric Nanogenerators with Sr-Doped Lanthanum Cobaltite (La₁₋ₓSrₓCoO₃) and Multiwalled Carbon Nanotubes for Energy Harvesting</p>
+                    <p class="text-base italic">Shohag, S. M. A. U., Franco, L., Tippur, A., Mohan, S., Rahman, M. W., & Uddin, M. J.</p>
+                    <p class="text-base"><span class="font-semibold">ACS Applied Engineering Materials</span>, (2024).</p>
+                    <a href="https://doi.org/10.1021/acsaenm.4c00503" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 2 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Inorganic cesium lead mixed halide based perovskite solar materials modified with functional silver iodide</p>
+                    <p class="text-base italic">Eze, V. O., et al.</p>
+                    <p class="text-base"><span class="font-semibold">Scientific Reports</span>, (2022), 12, 7794.</p>
+                    <a href="https://doi.org/10.1038/s41598-022-11729-0" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 3 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Synthesis of color tunable piezoelectric nanogenerators using CsPbX₃ perovskite nanocrystals embedded in poly(D,L-lactide) membranes</p>
+                    <p class="text-base italic">Abir, S. S. H., Trevino, J. E., Srivastava, B. B., Sadaf, M. U. K., Salas, J. I., Lozano, K., & Uddin, M. J.</p>
+                    <p class="text-base"><span class="font-semibold">Nano Energy</span>, (2022), 102, 107674.</p>
+                    <a href="https://doi.org/10.1016/j.nanoen.2022.107674" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 4 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Piezoelectric Signals in Vascularized Bone Regeneration</p>
+                    <p class="text-base italic">D’Alessandro, D., Ricci, C., Milazzo, M., Strangis, G., Forli, F., Buda, G., Petrini, M., Berrettini, S., Uddin, M. J., Danti, S., & Parchi, P.</p>
+                    <p class="text-base"><span class="font-semibold">Biomolecules</span>, (2021), 11(11), 1731.</p>
+                    <a href="https://doi.org/10.3390/biom11111731" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 5 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">KNN based piezo-triboelectric lead-free hybrid energy films</p>
+                    <p class="text-base italic">Abdullah, A. M., Sadaf, M. U. K., Tasnim, F., Vasquez, H., Lozano, K., & Uddin, M. J.</p>
+                    <p class="text-base"><span class="font-semibold">Nano Energy</span>, (2021), 86, 106133.</p>
+                    <a href="https://doi.org/10.1016/j.nanoen.2021.106133" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 6 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Piezo-tribo dual effect hybrid nanogenerators for health monitoring</p>
+                    <p class="text-base italic">Shawon, S. M. A. Z., Sun, A. X., Vega, V. S., Chowdhury, B. D., Tran, P., Carballo, Z. D., Tolentino, J. A., Li, J., Rafaqut, M. S., Danti, S., & Uddin, M. J.</p>
+                    <p class="text-base"><span class="font-semibold">Nano Energy</span>, (2021), 82, Article 105691.</p>
+                    <a href="https://doi.org/10.1016/j.nanoen.2020.105691" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 7 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Electrospinning Piezoelectric Fibers for Biocompatible Devices</p>
+                    <p class="text-base italic">Azimi, B., Milazzo, M., Lazzeri, A., Berrettini, S., Uddin, M. J., Qin, Z., Buehler, M. J., & Danti, S.</p>
+                    <p class="text-base"><span class="font-semibold">Advanced Healthcare Materials</span>, (2020), 9(1), e1901287.</p>
+                    <a href="https://doi.org/10.1002/adhm.201901287" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 8 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Synthesis and fabrication of self-sustainable triboelectric energy case for powering smart electronic devices</p>
+                    <p class="text-base italic">Abdullah, A. M., Chowdhury, A. R., Islam, E., Tasnim, F., Flores, A., & others.</p>
+                    <p class="text-base"><span class="font-semibold">Nano Energy</span>, (2020), 73, 104774.</p>
+                    <a href="https://doi.org/10.1016/j.nanoen.2020.104774" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+                <hr>
+                <!-- Publication 9 -->
+                <div class="space-y-2">
+                    <p class="text-xl font-semibold">Lithium-doped zinc oxide based flexible piezoelectric-triboelectric hybrid nanogenerator</p>
+                    <p class="text-base italic">Chowdhury, A. R., Abdullah, A. M., Hussain, I., Lopez, J., Cantu, D., Gupta, S. K., Mao, Y., Danti, S., Uddin, M. J., et al.</p>
+                    <p class="text-base"><span class="font-semibold">Nano Energy</span>, (2019), 61, 327-336.</p>
+                    <a href="https://doi.org/10.1016/j.nanoen.2019.04.085" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline inline-flex items-center text-base">
+                        View Publication <i class="fas fa-external-link-alt ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- Sensor Modal Logic ---
+        const sensorBtn = document.getElementById('sensor-btn');
+        const sensorModal = document.getElementById('sensor-modal');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+
+        sensorBtn.addEventListener('click', () => {
+            sensorModal.classList.remove('hidden');
+        });
+
+        const closeSensorModal = () => {
+            sensorModal.classList.add('hidden');
+        };
+
+        closeModalBtn.addEventListener('click', closeSensorModal);
+        sensorModal.addEventListener('click', (event) => {
+            if (event.target === sensorModal) {
+                closeSensorModal();
+            }
+        });
+        
+        // --- Energy Modal Logic ---
+        const energyBtn = document.getElementById('energy-btn');
+        const energyModal = document.getElementById('energy-modal');
+        const closeEnergyModalBtn = document.getElementById('close-energy-modal-btn');
+
+        energyBtn.addEventListener('click', () => {
+            energyModal.classList.remove('hidden');
+        });
+
+        const closeEnergyModal = () => {
+            energyModal.classList.add('hidden');
+        };
+
+        closeEnergyModalBtn.addEventListener('click', closeEnergyModal);
+        energyModal.addEventListener('click', (event) => {
+            if (event.target === energyModal) {
+                closeEnergyModal();
+            }
+        });
+        
+        // --- Photovoltaics Modal Logic ---
+        const photovoltaicsBtn = document.getElementById('photovoltaics-btn');
+        const photovoltaicsModal = document.getElementById('photovoltaics-modal');
+        const closePhotovoltaicsModalBtn = document.getElementById('close-photovoltaics-modal-btn');
+
+        photovoltaicsBtn.addEventListener('click', () => {
+            photovoltaicsModal.classList.remove('hidden');
+        });
+
+        const closePhotovoltaicsModal = () => {
+            photovoltaicsModal.classList.add('hidden');
+        };
+
+        closePhotovoltaicsModalBtn.addEventListener('click', closePhotovoltaicsModal);
+        photovoltaicsModal.addEventListener('click', (event) => {
+            if (event.target === photovoltaicsModal) {
+                closePhotovoltaicsModal();
+            }
+        });
+
+        // --- Triboelectrics Modal Logic ---
+        const triboBtn = document.getElementById('tribo-btn');
+        const triboModal = document.getElementById('tribo-modal');
+        const closeTriboModalBtn = document.getElementById('close-tribo-modal-btn');
+
+        triboBtn.addEventListener('click', () => {
+            triboModal.classList.remove('hidden');
+        });
+        
+        const closeTriboModal = () => {
+            triboModal.classList.add('hidden');
+        };
+
+        closeTriboModalBtn.addEventListener('click', closeTriboModal);
+        triboModal.addEventListener('click', (event) => {
+            if (event.target === triboModal) {
+                closeTriboModal();
+            }
+        });
+
+        // --- Functional Materials Modal Logic ---
+        const functionalBtn = document.getElementById('functional-btn');
+        const functionalModal = document.getElementById('functional-modal');
+        const closeFunctionalModalBtn = document.getElementById('close-functional-modal-btn');
+
+        functionalBtn.addEventListener('click', () => {
+            functionalModal.classList.remove('hidden');
+        });
+        
+        const closeFunctionalModal = () => {
+            functionalModal.classList.add('hidden');
+        };
+
+        closeFunctionalModalBtn.addEventListener('click', closeFunctionalModal);
+        functionalModal.addEventListener('click', (event) => {
+            if (event.target === functionalModal) {
+                closeFunctionalModal();
+            }
+        });
+
+        // --- Piezoelectrics Modal Logic ---
+        const piezoBtn = document.getElementById('piezo-btn');
+        const piezoModal = document.getElementById('piezo-modal');
+        const closePiezoModalBtn = document.getElementById('close-piezo-modal-btn');
+
+        piezoBtn.addEventListener('click', () => {
+            piezoModal.classList.remove('hidden');
+        });
+
+        const closePiezoModal = () => {
+            piezoModal.classList.add('hidden');
+        };
+
+        closePiezoModalBtn.addEventListener('click', closePiezoModal);
+        piezoModal.addEventListener('click', (event) => {
+            if (event.target === piezoModal) {
+                closePiezoModal();
+            }
+        });
+
+        // --- Close all modals with Escape key ---
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                if (!sensorModal.classList.contains('hidden')) closeSensorModal();
+                if (!energyModal.classList.contains('hidden')) closeEnergyModal();
+                if (!photovoltaicsModal.classList.contains('hidden')) closePhotovoltaicsModal();
+                if (!triboModal.classList.contains('hidden')) closeTriboModal();
+                if (!functionalModal.classList.contains('hidden')) closeFunctionalModal();
+                if (!piezoModal.classList.contains('hidden')) closePiezoModal();
+            }
+        });
+    </script>
+
+</body>
+</html>
+
